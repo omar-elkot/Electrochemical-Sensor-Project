@@ -63,7 +63,7 @@ Alternatively, download the repository from GitHub and open the project folder i
 **Windows PowerShell:**
 
 ```powershell
-py -3.13 -m venv .venv
+py -3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
@@ -106,7 +106,7 @@ To generate a new dataset, run:
 python -m src.simulate
 ```
 
-The simulation generates a new experiment containing sensor CSV files and metadata. Check the configured output location before running it. After generating the experiment, analyze the latest dataset with:
+The simulation generates a new experiment containing sensor CSV files and metadata. Each run creates a new experiment folder. After generating the experiment in which you can analyze. To analyze the latest dataset use:
 
 ```bash
 python -m src.analyze_data --experiment latest
@@ -126,7 +126,7 @@ Instead of running the analysis scripts manually, launch the interactive dashboa
 streamlit run app.py
 ```
 
-Streamlit will provide a local URL that you can open in your browser.
+Streamlit will provide a local URL that you can open in your browser, or you can run steamlit using the link above.
 
 #### 5. Run the automated tests
 
@@ -173,6 +173,11 @@ electrochemical-sensor-project/
 │   ├── plot_diagnostics.py
 │   └── test_parameter_recovery.py
 └── validation_scripts/
+    ├── false_positive_validation.py
+    ├── model_comparison_validation.py
+    ├── offset_recovery_validation.py
+    ├── parameter_validation.py
+    └── power_analysis.py
 ```
 
 - `app.py` — interactive Streamlit dashboard.
