@@ -26,13 +26,12 @@ This project provides a modular computational framework for investigating these 
 
 There are two ways to use the project. Choose the one that suits you.
 
-### Option 1 — The easier way, if you would like to see an overview: Use the interactive dashboard!
+### Option 1 — Explore the Interactive Dashboard
 
-To explore the project without using Python or setting up a virtual environment? Use the interactive Streamlit dashboard:
+Explore the project directly in your browser using the live Streamlit dashboard, without installing Python or configuring a local environment.
 
-**Open the online dashboard:** *Link coming soon.*
-
-Once deployed, the dashboard will be publicly accessible through a browser link. You can share this link with anyone interested in exploring the project, without requiring them to install Python, download the repository, or configure any dependencies.
+**Launch the Electrochemical Sensor Analysis Toolkit here:**
+https://electrochemical-sensor-project-omar-elkot.streamlit.app/
 
 The dashboard provides an interactive overview of the project's functionality, making it easy to explore the sensor simulation and analysis without manually running individual Python scripts.
 
@@ -44,7 +43,7 @@ This option gives you direct access to the code, experiment files, statistical m
 
 #### Requirements:
 
-- Python 3.13 (tested)
+- Python 3.10+
 - pip
 - Git, if cloning the repository
 
@@ -107,16 +106,12 @@ To generate a new dataset, run:
 python -m src.simulate
 ```
 
-The simulation generates a new experiment containing sensor CSV files and metadata. Check the configured output location before running it, as reusing an existing destination may overwrite files in the repository.
-
-After generating the experiment, analyze the latest dataset with:
+The simulation generates a new experiment containing sensor CSV files and metadata. Check the configured output location before running it. After generating the experiment, analyze the latest dataset with:
 
 ```bash
 python -m src.analyze_data --experiment latest
 ```
-To analyze a specific experiment
-
-If you have multiple experiments stored in data/experiments/, you can select a particular experiment by its ID. For example, to analyze experiment_001 run:
+If you have multiple experiments stored in data/experiments/, and would like to analyze a specific one, you can select a particular experiment by its ID. For example, to analyze experiment_001 run:
 
 ```bash
 python -m src.analyze_data --experiment experiment_001
@@ -214,4 +209,4 @@ The project includes simulation, statistical analysis, visualization, an interac
 
 ## Author
 
-`<Omar Elkot>`, `<B.Sc. Physics and Data Science>`, `<Constructor University, Bremen, Germany>`. `<https://www.linkedin.com/in/omar-mohamed-elkot/>`
+**Omar Elkot**, B.Sc. Physics and Data Science, Constructor University Bremen, Germany. [LinkedIn](https://www.linkedin.com/in/omar-mohamed-elkot/)
