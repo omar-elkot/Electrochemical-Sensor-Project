@@ -1,0 +1,39 @@
+{
+  "experiment_id": "experiment_001",
+  "seed": 42,
+  "n_sensors": 8,
+  "n_measurements": 1600,
+  "model_parameters": {
+    "baseline": 100.0,
+    "b_conc": 8.0,
+    "b_light": 0.01,
+    "b_inter": 0.0002,
+    "noise_std": 2.5,
+    "sensor_offset_std": 3.0,
+    "light_scale": null
+  },
+  "concentrations_mM": [
+    0.0,
+    2.5,
+    5.0,
+    7.5,
+    10.0
+  ],
+  "light_levels_lux": [
+    0,
+    100,
+    300,
+    600
+  ],
+  "sensor_offsets_mV": {
+    "0": 0.914151239263294,
+    "1": -3.1199523187214866,
+    "2": 2.2513535874193717,
+    "3": 2.8216941491736414,
+    "4": -5.853105565961509,
+    "5": -3.9065385205869543,
+    "6": 0.3835212095018561,
+    "7": -0.9487277770307466
+  },
+  "note": "Synthetic data, not physical sensor measurements. Lux is a simplified illumination proxy; wavelength and irradiance are not modeled."
+}

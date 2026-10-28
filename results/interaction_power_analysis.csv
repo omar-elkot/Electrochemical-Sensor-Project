@@ -1,0 +1,3 @@
+scenario,requested_simulations,usable_fits,failed_or_unusable_fits,detection_or_false_positive_rate_pct
+Null (b_inter = 0),200,200,0,5.5
+Interaction present,200,200,0,72.0
