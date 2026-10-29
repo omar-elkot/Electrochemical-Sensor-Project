@@ -204,7 +204,7 @@ Additional limitations and potential improvements include:
 - **Experimental validation:** Compare simulated behavior with measurements collected from physical sensors.
 - **Model evaluation:** Extend the validation studies to investigate model assumptions, uncertainty estimates, and false-positive behavior under a wider range of conditions.
 
-## Technologies
+## Tech Stack
 
 Python · NumPy · pandas · SciPy · statsmodels · Matplotlib · Plotly · Streamlit · pytest
 
